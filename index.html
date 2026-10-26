@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#11130f" />
+    <meta name="description" content="Amr Mohy is a full stack developer building complete web applications for ambitious businesses, from interface and backend to launch." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Amr Mohy — Full Stack Developer" />
+    <meta property="og:description" content="One developer. The complete journey. From idea to launch." />
+    <meta property="og:image" content="assets/social-preview.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Amr Mohy — Full Stack Developer</title>
+    <script>
+      (() => {
+        const root = document.documentElement;
+        try {
+          const language = localStorage.getItem("portfolio-language");
+          const theme = localStorage.getItem("portfolio-theme");
+          root.lang = language === "ar" ? "ar" : "en";
+          root.dir = root.lang === "ar" ? "rtl" : "ltr";
+          root.dataset.theme = theme === "light" ? "light" : "dark";
+          document.querySelector('meta[name="theme-color"]').content = theme === "light" ? "#f5f5ef" : "#11130f";
+        } catch {
+          root.lang = "en";
+          root.dir = "ltr";
+          root.dataset.theme = "dark";
+        }
+      })();
+    </script>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preload" as="image" href="assets/amr-mohy-portrait.jpeg" fetchpriority="high" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="site-config.js" defer></script>
+    <script src="translations.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress"></span></div>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#home" aria-label="Amr Mohy, home">
+        <span class="brand-mark">AM<span>.</span></span>
+        <span class="brand-copy"><span data-person-name>AMR MOHY</span> <small>FULL STACK DEVELOPER</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#home" data-nav="home">Home</a>
+        <a href="#about" data-nav="about">About</a>
+        <a href="#experience" data-nav="experience">Experience</a>
+        <a href="#skills" data-nav="skills">Skills</a>
+        <a href="#projects" data-nav="projects">Projects</a>
+        <a href="#services" data-nav="services">Services</a>
+        <a href="#education" data-nav="education">Education</a>
+        <a href="#contact" data-nav="contact">Contact</a>
+      </nav>
+      <div class="header-controls">
+        <div class="language-control">
+          <button class="utility-button language-toggle" id="language-toggle" type="button" aria-label="Switch language to Arabic" title="Switch language to Arabic">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"></path></svg>
+            <span id="current-language">EN</span>
+          </button>
+        </div>
+        <button class="utility-button theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true" hidden><path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5 8.5 8.5 0 1 0 20.5 15.5Z"></path></svg>
+        </button>
+      </div>
+      <a class="header-cta" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">
+        <span></span><span></span>
+      </button>
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
+        <a href="#home" data-nav="home"><span>01</span> Home</a>
+        <a href="#about" data-nav="about"><span>02</span> About</a>
+        <a href="#experience" data-nav="experience"><span>03</span> Training &amp; experience</a>
+        <a href="#skills" data-nav="skills"><span>04</span> Skills &amp; tools</a>
+        <a href="#projects" data-nav="projects"><span>05</span> Projects</a>
+        <a href="#services" data-nav="services"><span>06</span> Services</a>
+        <a href="#education" data-nav="education"><span>07</span> Education</a>
+        <a href="#contact" data-nav="contact"><span>08</span> Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow hero-eyebrow"><span class="status-dot"></span> <span data-person-location>Based in Egypt · Working worldwide</span></p>
+          <h1 class="hero-name" id="hero-title"><span class="hero-name-intro">HI, I’M</span><span class="hero-name-person"><span data-person-name>AMR MOHY</span><span aria-hidden="true"></span></span></h1>
+          <p class="hero-statement">I build digital products that <em>move businesses forward.</em></p>
+          <p class="hero-description">I help ambitious businesses turn ideas into powerful digital products — designing intuitive interfaces, engineering reliable backends, structuring databases, and deploying complete web applications built to solve real business problems.</p>
+          <p class="hero-promise">One developer. The complete journey. <strong>From idea to launch.</strong></p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my projects <span aria-hidden="true">↘</span></a>
+            <a class="button button-quiet" href="#contact">Let’s build something <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-bottomline"><span>FULL STACK DEVELOPMENT</span><span>01 — 08</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Portrait of Amr Mohy">
+          <div class="portrait-frame">
+            <img class="portrait" src="assets/amr-mohy-portrait.jpeg" alt="Amr Mohy, Full Stack Developer" width="960" height="1280" fetchpriority="high" />
+            <span class="portrait-index" aria-hidden="true">AM / 26</span>
+            <span class="portrait-note"><span class="note-line"></span> Building what’s next</span>
+          </div>
+          <div class="hero-orbit" aria-hidden="true"><span>IDEA</span><b>→</b><span>PRODUCT</span></div>
+          <span class="hero-side-note" aria-hidden="true">DESIGN · ENGINEERING · LAUNCH</span>
+        </div>
+        <a class="scroll-cue" href="#about"><span class="scroll-cue-line"></span><span>Scroll to explore</span><span>↓</span></a>
+        <span class="hero-index" aria-hidden="true">PORTFOLIO / 2026</span>
+      </section>
+
+      <section class="about section-pad" id="about" aria-labelledby="about-title">
+        <svg class="flight-path" id="flight-path" viewBox="0 0 1 1" preserveAspectRatio="none" aria-hidden="true">
+          <path id="flight-trail" d="" />
+        </svg>
+        <svg class="flight-plane" id="flight-plane" viewBox="0 0 1 1" preserveAspectRatio="none" aria-hidden="true">
+          <g id="paper-plane-position"><g id="paper-plane" class="paper-plane"><path d="M-16 2 16-12 6 15 1 5-16 2Zm17 3 15-17" /></g></g>
+        </svg>
+        <div class="section-shell about-content">
+          <div class="section-kicker"><span>02 / ABOUT</span><span>THE PERSON BEHIND THE BUILD</span></div>
+          <div class="about-heading reveal">
+            <p class="eyebrow">Curiosity meets craft</p>
+            <h2 id="about-title">CURIOUS BY NATURE<br /><em>ENGINEERED TO BUILD </em></h2>
+          </div>
+          <div class="about-intro reveal">
+            <span class="about-waypoint large-asterisk" data-flight-waypoint aria-hidden="true">*</span>
+            <p>I’m Amr Mohy, a Full Stack Developer with a background in Computer Science and Artificial Intelligence and a passion for building practical digital solutions. I enjoy connecting the dots between user experience, backend engineering, data, and deployment to turn complex requirements into reliable products that people can actually use.</p>
+          </div>
+          <div class="about-principles">
+            <div class="principles-heading reveal"><span class="about-waypoint" data-flight-waypoint aria-hidden="true">*</span><div><p class="eyebrow">How I approach a problem</p><h3>MORE THAN CODE<br /><em>I THINK IN SOLUTIONS</em></h3></div></div>
+            <div class="principles-list">
+              <article class="principle reveal"><span class="about-waypoint" data-flight-waypoint aria-hidden="true">*</span><span class="principle-number">01</span><div><h4>End-to-end ownership</h4><p>I look beyond individual features to understand how the entire application should work — from its interface and business logic to its database and deployment.</p></div></article>
+              <article class="principle reveal"><span class="about-waypoint" data-flight-waypoint aria-hidden="true">*</span><span class="principle-number">02</span><div><h4>Business-first thinking</h4><p>I focus on the problem behind the request, translating business needs into practical features and maintainable technical solutions.</p></div></article>
+              <article class="principle reveal"><span class="about-waypoint" data-flight-waypoint aria-hidden="true">*</span><span class="principle-number">03</span><div><h4>Built for real use</h4><p>I care about validation, permissions, data integrity, error handling, and the details that help an application work beyond a local demo.</p></div></article>
+              <article class="principle reveal"><span class="about-waypoint" data-flight-waypoint aria-hidden="true">*</span><span class="principle-number">04</span><div><h4>One connected workflow</h4><p>By working across the frontend, backend, and database, I can keep the different parts of a project aligned and reduce unnecessary complexity.</p></div></article>
+            </div>
+          </div>
+          <div class="about-signoff reveal"><span class="about-waypoint" data-flight-waypoint aria-hidden="true">*</span><p>I don’t just build features.<br /><strong>I build solutions that make sense.</strong></p></div>
+        </div>
+      </section>
+
+      <section class="experience section-pad" id="experience" aria-labelledby="experience-title">
+        <div class="section-shell">
+          <div class="section-kicker"><span>03 / TRAINING &amp; EXPERIENCE</span><span>BACKEND · FRONTEND · AI</span></div>
+          <div class="experience-heading reveal"><div><p class="eyebrow">Training &amp; project-based experience</p><h2 id="experience-title">TRAINING &amp;<br /><em>EXPERIENCE</em></h2></div><p>Technical training and a focused AI chatbot project, with each entry’s scope clearly described.</p></div>
+          <div class="experience-timeline" id="experience-list" aria-label="Training and project-based experience timeline"></div>
+        </div>
+      </section>
+
+      <section class="skills section-pad" id="skills" aria-labelledby="skills-title">
+        <div class="section-shell">
+          <div class="section-kicker"><span>04 / SKILLS &amp; TOOLS</span><span>A PRACTICAL TOOLKIT</span></div>
+          <div class="skills-intro reveal"><div><p class="eyebrow">The parts work together</p><h2 id="skills-title">THE STACK BEHIND<br /><em>THE SOLUTIONS</em></h2></div><p>I choose tools based on the problem, prioritize maintainable architecture, and focus on making every part of the application work together.</p></div>
+          <div class="skill-groups" id="skill-groups"></div>
+          <p class="skill-caption reveal"><span>SKILLS REFLECT PRACTICAL DEVELOPMENT EXPERIENCE</span><span>NO ARTIFICIAL RATINGS</span></p>
+        </div>
+      </section>
+
+      <section class="work section-pad" id="projects" aria-labelledby="projects-title">
+        <div class="section-shell">
+          <div class="section-kicker"><span>05 / PROJECTS</span><span>IDEAS MADE USEFUL</span></div>
+          <div class="work-heading reveal"><div><p class="eyebrow">Projects</p><h2 id="projects-title">A CLOSER LOOK AT<br /><em>WHAT I BUILD</em></h2></div><p>Each project starts with a real challenge. Here’s a closer look at the thinking and engineering behind the work.</p></div>
+          <div class="project-list" id="project-list"></div>
+          <p class="work-note">I only feature projects with real implementation details. New case studies will be added as verified work is ready to share.</p>
+        </div>
+      </section>
+
+      <section class="services section-pad" id="services" aria-labelledby="services-title">
+        <div class="section-shell">
+          <div class="section-kicker"><span>06 / SERVICES</span><span>FROM FIRST BRIEF TO LAUNCH</span></div>
+          <div class="services-intro reveal"><div><p class="eyebrow">Made for your next step</p><h2 id="services-title">LET’S TURN YOUR NEXT IDEA<br />INTO <em>SOMETHING REAL</em></h2></div><p>From launching your first business website to building a custom application, I help businesses move from requirements to a working digital solution.</p></div>
+          <div class="service-list" id="service-list"></div>
+          <div class="services-cta reveal"><p>Have a project in mind?<br /><strong>Let’s discuss it.</strong></p><a class="button button-light" href="#contact">Start a conversation <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </section>
+
+      <section class="education section-pad" id="education" aria-labelledby="education-title">
+        <div class="section-shell">
+          <div class="section-kicker"><span>07 / EDUCATION</span><span>A FOUNDATION FOR WHAT’S NEXT</span></div>
+          <div class="education-layout">
+            <div class="education-heading reveal"><p class="eyebrow">Learning by design</p><h2 id="education-title">A FOUNDATION<br />IN <em>COMPUTING.</em></h2><p>Building strong fundamentals, then putting them to work on practical products.</p></div>
+            <article class="education-record reveal">
+              <div class="education-year"><span data-education-start>2022</span> <span>—</span> <span data-education-end>2026</span></div>
+              <div class="education-rule"><span></span></div>
+              <div class="education-details"><p class="eyebrow">Academic background</p><h3 data-education-university>Damietta University</h3><p class="degree-name" data-education-program>Computer Science and Artificial Intelligence</p><p>My background in Computer Science and Artificial Intelligence has helped me develop a foundation in programming, computational thinking, software development, databases, and AI concepts. I apply this foundation to building practical applications that connect technical implementation with real-world needs.</p><span class="education-status">STUDY PERIOD · 2022–2026</span></div>
+            </article>
+          </div>
+          <div class="learning-areas reveal"><p class="eyebrow">Relevant learning areas</p><div class="learning-list"><span>Frontend web development</span><span>Backend development</span><span>Relational databases &amp; SQL</span><span>Software engineering fundamentals</span><span>Artificial intelligence fundamentals</span><span>Retrieval-augmented generation</span></div></div>
+          <div class="training-note reveal"><span class="training-icon" aria-hidden="true">↗</span><p><strong>Training &amp; professional development</strong><br />ITIDA backend training, NTI frontend training in progress, and an AI Agent training certificate.</p><a class="training-link" href="#experience">View training details</a></div>
+        </div>
+      </section>
+
+      <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
+        <div class="section-shell">
+          <div class="section-kicker"><span>08 / CONTACT</span><span>YOUR IDEA, ONE CONVERSATION AWAY</span></div>
+          <div class="contact-heading reveal"><p class="eyebrow">Let’s make it work</p><h2 id="contact-title">HAVE A CHALLENGE?<br /><em>LET’S BUILD THE SOLUTION.</em></h2><p>Whether you have a clear specification or just the beginning of an idea, let’s discuss how I can help turn it into a practical digital product.</p></div>
+          <div class="contact-layout">
+            <div class="contact-details reveal">
+              <p class="eyebrow">Get in touch directly</p>
+              <a class="contact-item" data-contact-link="email" href="mailto:amrmohy4421@gmail.com"><span>Email</span><strong data-contact-value="email">amrmohy4421@gmail.com</strong><i aria-hidden="true">↗</i></a>
+              <a class="contact-item" data-contact-link="linkedin" href="https://www.linkedin.com/in/amr-mohy-148041369?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_ios" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><strong>Connect with me</strong><i aria-hidden="true">↗</i></a>
+              <a class="contact-item" data-contact-link="github" href="https://github.com/amrmihy4421" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>See my code</strong><i aria-hidden="true">↗</i></a>
+              <p class="contact-location"><span class="status-dot"></span> <span data-person-location>Based in Egypt · Working worldwide</span></p>
+            </div>
+            <form class="contact-form reveal" id="contact-form" action="mailto:amrmohy4421@gmail.com" method="post" enctype="text/plain">
+              <div class="form-heading"><h3>Tell me about your project.</h3><p>Share a few details and I’ll have the context to start a useful conversation.</p></div>
+              <div class="form-row">
+                <label for="full-name">Full name <span>*</span><input id="full-name" name="Full name" autocomplete="name" required maxlength="100" placeholder="Your name" /></label>
+                <label for="email">Email address <span>*</span><input id="email" name="Email" type="email" autocomplete="email" required maxlength="254" placeholder="you@example.com" /></label>
+              </div>
+              <div class="form-row">
+                <label for="project-type">Project type <span>*</span><select id="project-type" name="Project type" required><option value="" disabled selected>Select a service</option><option>Business website</option><option>E-commerce development</option><option>Full stack web application</option><option>Backend or API development</option><option>Database design or integration</option><option>Deployment and launch</option><option>AI application integration</option><option>Something else</option></select></label>
+                <label for="budget">Estimated budget <small>OPTIONAL</small><select id="budget" name="Estimated budget"><option value="">Prefer not to say</option><option>Under $1,000</option><option>$1,000–$3,000</option><option>$3,000–$7,500</option><option>$7,500+</option><option>Let’s discuss</option></select></label>
+              </div>
+              <label for="project-description">A little about the project <span>*</span><textarea id="project-description" name="Project description" required minlength="20" maxlength="4000" rows="4" placeholder="What are you hoping to build or improve?"></textarea></label>
+              <button class="button button-primary form-submit" type="submit">Prepare email draft <span aria-hidden="true">↗</span></button>
+              <p class="form-note">This opens a draft in your email app. Your message is not sent or stored by this website.</p>
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+          <div class="final-cta reveal"><p class="eyebrow">The next step starts here</p><h3>YOUR IDEA. <span>MY CODE.</span><br />ONE WORKING SOLUTION.</h3><a data-contact-link="email" href="mailto:amrmohy4421@gmail.com" class="button button-outline">Let’s talk <span aria-hidden="true">↗</span></a></div>
+          <footer class="site-footer"><a class="footer-brand" href="#home">AM<span>.</span> <small>FULL STACK DEVELOPER</small></a><p>Thoughtful software, built end to end.</p><div class="footer-links"><a data-contact-link="github" href="https://github.com/amrmihy4421" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a data-contact-link="linkedin" href="https://www.linkedin.com/in/amr-mohy-148041369?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_ios" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="#top">Back to top ↑</a></div><span class="copyright">© <span id="copyright-year"></span> <span data-person-name>AMR MOHY</span></span></footer>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

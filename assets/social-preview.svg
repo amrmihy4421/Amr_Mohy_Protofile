@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#11130f"/>
+  <path d="M0 520H1200M845 0V630" stroke="#f0f0e9" stroke-opacity=".15"/>
+  <circle cx="1030" cy="142" r="72" fill="#cdf274"/>
+  <path d="M1020 177V104h17c27 0 43 13 43 36s-16 37-43 37Zm16-13h2c15 0 25-8 25-24s-10-23-25-23h-2Z" fill="#11130f"/>
+  <text x="80" y="110" fill="#cdf274" font-family="monospace" font-size="20" letter-spacing="5">AMR MOHY  /  PORTFOLIO</text>
+  <text x="76" y="295" fill="#f0f0e9" font-family="Arial, sans-serif" font-size="100" font-weight="700" letter-spacing="-7">FULL STACK</text>
+  <text x="76" y="401" fill="#cdf274" font-family="Georgia, serif" font-size="100" font-style="italic" letter-spacing="-5">Developer</text>
+  <text x="80" y="477" fill="#b8bab0" font-family="Arial, sans-serif" font-size="24">One developer. The complete journey. From idea to launch.</text>
+  <text x="80" y="573" fill="#85887e" font-family="monospace" font-size="15" letter-spacing="3">DESIGN  ·  ENGINEERING  ·  LAUNCH</text>
+</svg>
